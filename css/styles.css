@@ -1,0 +1,62 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inner-container {
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: maroon;
+    margin-bottom: 1.5rem;
+}
+
+.card > div {
+    padding: 1.5rem;
+    color: antiquewhite;
+}
+
+@media screen and (min-width: 545px) {
+    .flex {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .card {
+        /*flex: 1 1 25rem;*/
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        display: flex;
+    }
+
+    .card img {
+        max-width: 50%;
+    }
+}
+
+/*for wider desktop screens, make sure to use a fixed width centered container, 
+to stop the layout from stretching and growing with the screen*/
+@media screen and (min-width: 1580px) {
+    .inner-container {
+        padding: 0;
+        max-width: 1580px;
+        margin: 0 auto;
+    }
+}
